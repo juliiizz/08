@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <style>
+        
+        h1, h2, h3{
+            color: black;
+            background-color: rgb(180, 210, 255);
+        }
+        form{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+       img{
+        width: 60px;
+        height: 60px;
+       }
+
+       footer{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+       }
+      
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Formulario Industrial Textil</h1>
+        <form action="/formulario" method="post">
+
+            <fieldset>
+                <h2> DATOS PRINCIPALES </h2>
+            <div> 
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido">
+
+            <label for="DNI">DNI</label>
+            <input type="text" name="dni" id="dni">
+            </div>
+            </fieldset>
+
+
+            <fieldset>  
+            <div>
+            <label for="domicilio">Domicilio</label>
+            <input type="text" name="domicilio" id="domicilio">
+
+            <label for="codigopostal">Código Postal</label>
+            <input type="text" name="codigopostal" id="codigopostal">
+
+            <label for="localidad">Localidad</label>
+            <input type="text" name="localidad" id="localidad">
+            </div>
+            </fieldset>
+        
+
+            <fieldset>
+            <div>   
+            <label for="telefonocel">Teléfono Celular</label>
+            <input type="tel" name="telefonocel" id="telefonocel">
+
+            <label for="telefonoem">Teléfono de Emergencia</label>
+            <input type="tel" name="telefonoem" id="telefonoem"> 
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+            </div>
+            </fieldset>
+    
+
+            <fieldset>
+                <div> 
+            <label for="lugardetrabajo">Lugar de Trabajo</label>
+            <input type="text" name="lugardetrabajo" id="lugardetrabajo">
+
+            <label for="localidaddeltrabajo">Localidad del Trabajo</label>
+            <input type="text" name="localidaddeltrabajo" id="localidaddeltrabajo"> 
+
+            <label for="sector">Sector</label>
+            <select name="sector" id="sector">
+                <option value="" selected>seleccionar</option>
+                <option value="ae">Asistente Escolar</option>
+                <option value="c">Cultura</option>
+                <option value="ds">Desarrollo Social</option>
+                <option value="ec">Economía</option>
+                <option value="ed">Educación</option>
+                <option value="fs">Fiscalía de Estado</option>
+                <option value="gb">Gobierno</option>
+                <option value="gp">Gestión Pública</option>
+                <option value="cyt">Ciencia y Tecnología</option>
+                <option value="s">Salud</option>
+                <option value="ss">Seguridad Social</option>
+                <option value="s">Secretaria</option>
+                <option value="sn">Sindicatura</option>
+            </select>
+
+            <label for="funcionquedesempeña">Función que Desempeña</label>
+            <input type="text" name="funciónquedesempeña" id="funciónquedesempeña">
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <h2> TIPO DE PRENDA / TALLE </h2>
+                <div>
+            <label for="pantalon">Pantalón de Vestir</label>
+            <input type="number" name="pantalon" id="pantalon">
+
+            <label for="camisa">Camisa de Vestir </label>
+            <input type="number" name="camisa" id="camisa">
+
+            <label for="pantalongraf">Pantalón de Grafa</label>
+            <input type="number" name="pantalongraf" id="pantalongraf">
+
+            <label for="camisagraf">Camisa de Grafa</label>
+            <input type="number" name="camisagraf" id="pantalongraf">
+                </div>
+            </fieldset>
+
+
+
+            <fieldset>    
+                <div>
+            <label form="Chaqueta">Chaqueta</label>
+            <input type="number" name="Chaqueta" id="Chaqueta">
+
+            <label form="chaquetaporteraycocinera">Chaqueta portera y cocinera </label>
+            <input type="number" name="chaquetaporteraycocinera" id="chaquetaporteraycocinera">
+
+            <label form="guardapolvo">Guardapolvo</label>
+            <input type="number" name="guardapolvo" id="guardapolvo">
+
+            <label form="guardapolvo">Guardapolvo</label>
+            <input type="number" name="guardapolvo" id="guardapolvo">
+
+            <label form="ambo">Ambo</label>
+            <input type="number" name="ambo" id="ambo">
+
+
+            <label form="cardigan">Cárdigan negro</label>
+            <input type="number" name="cardigan" id="cardigan">
+
+
+            <label form="cardiganayb">Cárdigan azul o blanco</label>
+            <input type="number" name="cardiganayb" id="cardiganayb">
+
+            <label form="guantes">Guantes de látex</label>
+            <input type="number" name="guantes" id="guantes">
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <h2> TIPO DE CALZADO / TALLE </h2>
+                <div>
+            <label form="zapatillas">Zapatillas</label>
+            <input type="number" name="zapatillas" id="zapatillas">
+
+            <label form="Mocasines">Mocasines</label>
+            <input type="number" name="Mocasines" id="Mocasines">
+
+            <label form="Botines">Botines</label>
+            <input type="number" name="Botines" id="Botines">
+
+            <label form="Botas">Botas</label>
+            <input type="number" name="Botas" id="Botas">
+
+            <label form="Zuecos">Zuecos</label>
+            <input type="number" name="Zuecos" id="Zuecos">
+                </div>
+            </fieldset>
+
+
+
+            <fieldset>
+                <div>
+            <label form="enviar"></label>
+            <input type="button" value="ENVIAR">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <a href="https://www.cet30.edu.ar/institucion"> 
+        <img class="" src="assets/logocet30-80.png" alt="logo">
+        </a> 
+    </footer>
+
+    
+</body>
+</html>
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+<body>
+    
+    <main> 
+        
+        <!--DEFINIMOS UN FORMULARIO-->
+        <form action="/destino" method="post">
+            <label for="">Usuario</label> <!--ETIQUETA-->
+            <input type="text" name="Usuario" id="Usuario"> <!--INPUT=ENTRADA-->
+
+            <label for="">Clave</label>
+            <input type="password" name="Clave" id="Clave">
+
+            <!--Placeholder permite colocar un label dentro del input-->
+            <input type="text" name="Apellido" id="Apellido" placeholder="Ingresar apellido"> 
+
+            <div>
+                <h2>EQUIPOS</h2>
+                <label for="river">River</label>
+                <input type="checkbox" name="river" id="river" value="1">
+
+                <label for="lanús">lanús</label>
+                <input type="checkbox" name="lanús" id="lanús" value="1">
+
+                <label for="boca">Boca</label>
+                <input type="checkbox" name="boca" id="boca" value="1">
+            </div>
+
+            <div>
+                <h2>COMIDAS</h2>
+                <label for="comida">Hamburguesa</label>
+                <input type="radio" name="comida" id="hamburguesa">
+
+                <label for="comida">Milanesa</label>
+                <input type="radio" name="comida" id="milanesa">
+
+                <label for="comida">Pizza</label>
+                <input type="radio" name="comida" id="pizza">
+            </div>
+
+            <div> 
+                <h2>provincias</h2>
+                <label for="provincias">provincias</label>
+                <select name="provincias" id="provincias">
+
+                <!--Selected es un atributo para que una opción este seleccionada por defecto-->
+                    <option value="" selected>seleccionar</option>
+                    <option value="rn">Río Negro</option>
+                    <option value="nqn">Neuquén</option>
+                    <option value="ch">Chubut</option>
+                </select>
+            </div>
+
+            <div> 
+                <label for="carta">carta</label>
+                <textarea name="carta" id="carta" cols="15" rows="5"></textarea>
+
+            
+            </div>
+
+
+        </form>
+    </main>
+
+
+
+</body>
+</html>
